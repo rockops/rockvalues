@@ -1,0 +1,10 @@
+global:
+  gv1: top
+
+tags:
+  t1: true
+
+subchart3:
+  subchart3_1:
+    subchart3_1_1:
+      v1: top

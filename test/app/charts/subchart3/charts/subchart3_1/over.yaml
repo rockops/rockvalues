@@ -1,0 +1,12 @@
+global:
+  gv1: depth2
+  gv2: depth2
+  gv3: depth2
+
+tags:
+  t3: true
+
+subchart3_1_1:
+  v1: depth2
+  v2: depth2
+  v3: depth2

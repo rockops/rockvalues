@@ -1,0 +1,19 @@
+name: "values"
+version: "1.0.4"
+description: |-
+  Get resources inside chart
+#command: "bash '$HELM_PLUGIN_DIR/chart-get-values.sh'"
+#command: powershell.exe -File $HELM_PLUGIN_DIR/chart-get-values.ps1 #$HELM_PLUGIN_DIR\chart-get-values.ps1"
+platformCommand:
+  - os: windows
+    command: powershell.exe
+    args:
+    - -File
+    - ${HELM_PLUGIN_DIR}\chart-get-values.ps1
+  - command: bash
+    args:
+    - ${HELM_PLUGIN_DIR}/chart-get-values.sh
+downloaders:
+- command: "go/values-downloader"
+  protocols:
+    - "chart"

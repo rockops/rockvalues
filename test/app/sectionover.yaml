@@ -1,0 +1,6 @@
+# One section commmmon in the chart and tue subchart
+
+subchart1:
+  over:
+    a: ok
+    b: ok

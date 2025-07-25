@@ -1,0 +1,4 @@
+# Extra value in subchart1 and merge global values
+extra: value
+global:
+  glob1: a

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+TOP=$(cd $(dirname $0) && pwd)
+
+case "$(uname)" in
+    Linux)
+        $TOP/yq_linux $*
+    ;;
+    Darwin)
+        $TOP/yq_darwin_amd64 $*
+    ;;
+    *)
+        $TOP/yq_windows_amd64.exe $*
+    ;;
+esac

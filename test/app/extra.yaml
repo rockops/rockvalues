@@ -1,0 +1,4 @@
+# Extra value with global value only in main chart
+extra: value
+global:
+  glob1: a

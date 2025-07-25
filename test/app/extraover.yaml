@@ -1,0 +1,6 @@
+# global.over defined in the main chart and in the subchart
+# The value of the main chart is kept
+# Other blobal values are merged
+over: ok
+global:
+  over: ok

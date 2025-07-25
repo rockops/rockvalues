@@ -1,0 +1,13 @@
+global:
+  gv1: depth3
+  gv2: depth3
+  gv3: depth3
+  gv4: depth3
+
+tags:
+  t4: true
+
+v1: depth3
+v2: depth3
+v3: depth3
+v4: depth3

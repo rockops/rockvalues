@@ -1,0 +1,4 @@
+global:
+  glob2: b
+  glob3: c
+dev: false
