@@ -1,3 +1,5 @@
+//go:build linux
+
 package main
 
 import (
@@ -127,7 +129,7 @@ func getProcessInfoFallback(pid int) (ProcessInfo, error) {
 	}, nil
 }
 
-func GetHelmCmdUnix() (ProcessInfo, error) {
+func GetHelmCmd() (ProcessInfo, error) {
 	processes, err := GetParentProcesses()
 	if err != nil {
 		Fdebug("Erreur: %v\n", err)

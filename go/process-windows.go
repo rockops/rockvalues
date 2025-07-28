@@ -1,3 +1,5 @@
+//go:build windows
+
 package main
 
 import (
@@ -280,7 +282,7 @@ func GetParentProcessesWithCommandLine() ([]ProcessInfo, error) {
 	return processes, nil
 }
 
-func GetHelmCmdWindows() (ProcessInfo, error) {
+func GetHelmCmd() (ProcessInfo, error) {
 	processes, err := GetParentProcessesWithCommandLine()
 	if err != nil {
 		Fdebug("Erreur: %v\n", err)

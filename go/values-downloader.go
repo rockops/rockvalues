@@ -12,14 +12,14 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-func getHelmCmd() (ProcessInfo, error) {
-	switch runtime.GOOS {
-	case "windows":
-		return GetHelmCmdWindows()
-	default:
-		return GetHelmCmdUnix()
-	}
-}
+// func getHelmCmd() (ProcessInfo, error) {
+// 	switch runtime.GOOS {
+// 	case "windows":
+// 		return GetHelmCmdWindows()
+// 	default:
+// 		return GetHelmCmdUnix()
+// 	}
+// }
 
 func getChart(helmCmd string) (chart, chartVersion, chartRepo string) {
 	args := parseHelmCmdArgs(helmCmd)
@@ -344,7 +344,7 @@ func main() {
 	Ftrace("Système d'exploitation: %s", runtime.GOOS)
 	Ftrace("PID actuel: %d", os.Getpid())
 
-	p, _ := getHelmCmd()
+	p, _ := GetHelmCmd()
 	if p.PID != 0 {
 		Ftrace("Helm command line: %s", p.CmdLine)
 	} else {

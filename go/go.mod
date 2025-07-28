@@ -1,4 +1,4 @@
-module process-parent
+module values-downloader
 
 go 1.22.2
 
