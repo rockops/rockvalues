@@ -1,4 +1,4 @@
-# dmp-helm-chart-downloader
+# Rock Values :guitar:
 
 Helm plugin to fetch resources from a helm chart
 
