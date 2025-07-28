@@ -29,7 +29,7 @@ while ($argList.Count -gt 1) {
         $file = $argList[0]
         Write-Host "# Source: $file"
         if ($file -match "^chart://") {
-            & "$env:HELM_PLUGIN_DIR/values-downloader.exe" certFile keyFile caFile $file
+            & "$env:HELM_PLUGIN_DIR/rockvalues.exe" certFile keyFile caFile $file
             if ($LASTEXITCODE -ne 0) { exit 1 }
         } else {
             if (Test-Path $file) {

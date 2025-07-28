@@ -1,4 +1,4 @@
-module values-downloader
+module rockvalues
 
 go 1.22.2
 

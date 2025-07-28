@@ -38,7 +38,7 @@ while [ -n "$1" ]; do
         echo "# Source: $1"
         echo "$1" | grep "^chart://" > /dev/null
         if [ $? = 0 ]; then
-            $HELM_PLUGIN_DIR/values-downloader certFile keyFile caFile "$1" || exit 1
+            $HELM_PLUGIN_DIR/rockvalues certFile keyFile caFile "$1" || exit 1
         else
             cat $1 || echo "# File does not exist"
         fi
