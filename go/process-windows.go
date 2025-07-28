@@ -10,6 +10,14 @@ import (
 	"unsafe"
 )
 
+// ProcessInfo contient les informations d'un processus
+type ProcessInfo struct {
+	PID     int
+	PPID    int
+	Name    string
+	CmdLine string
+}
+
 var (
 	kernel32 = syscall.NewLazyDLL("kernel32.dll")
 	ntdll    = syscall.NewLazyDLL("ntdll.dll")
