@@ -24,7 +24,9 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          *.tar.gz dist/bin/linux/rockvalues dist/bin/windows/rockvalues.exe
+          *.tar.gz
+          dist/bin/linux/rockvalues
+          dist/bin/windows/rockvalues.exe
         generate_release_notes: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
