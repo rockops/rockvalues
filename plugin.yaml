@@ -1,5 +1,5 @@
 name: "rockvalues"
-version: "0.9.0"
+version: "0.9.3"
 description: |-
   Get resources inside chart
 platformCommand:
