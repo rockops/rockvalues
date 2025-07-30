@@ -10,6 +10,7 @@ test -f ${HELM_PLUGIN_DIR}/bin/linux/rockvalues || {
         echo "Error: rockvalues binary not found in ${HELM_PLUGIN_DIR}/bin/linux/"
         exit 1
     }
+    chmod +x ${HELM_PLUGIN_DIR}/bin/linux/rockvalues
 }
 
 cp ${HELM_PLUGIN_DIR}/bin/linux/rockvalues ${HELM_PLUGIN_DIR}/rockvalues
