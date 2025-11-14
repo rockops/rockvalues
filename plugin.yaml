@@ -12,7 +12,7 @@ platformCommand:
     args:
     - ${HELM_PLUGIN_DIR}/scripts/chart-get-values.sh
 downloaders:
-- command: "values-downloader"
+- command: "rockvalues"
   protocols:
     - "chart"
 platformHooks:
